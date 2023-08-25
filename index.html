@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Makers</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="brand logo" />
+        <ul class="nav-list">
+          <li>Мои шаги</li>
+          <li>График обучения</li>
+          <li>Что я получу?</li>
+          <li>Бесплатные курсы</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Получи работу программистом</h2>
+      <h2 id="main-info2">в IT компании</h2>
+      <p>
+        Makers быстро обучит с нуля, даст практический опыт и будет с тобой до
+        твоей первой зарплаты.
+      </p>
+      <button>Получи консультацию</button>
+    </main>
+    <hr />
+    <div class="container tittle">
+      <p>Истории успехов выпускников</p>
+      <div class="students">
+        <button id="btnCreate">+</button>
+        <p>Все выпускники</p>
+      </div>
+    </div>
+    <div class="wrapper container" style="width: 100%">
+      <ul class="carousel container">
+        <li class="card">
+          <div class="img">
+            <img src="./images/photo_2023-07-12_11-43-21.jpg" alt="" />
+            <h3 class="card-name">Богдан Бочкарев</h3>
+            <div class="card-profession">Backend Developer</div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="./images/photo_2023-07-12_11-43-49.jpg" alt="" />
+            <h3 class="card-name">Тофик Гаджиев</h3>
+            <div class="card-profession">Backend Developer</div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="./images/photo_2023-07-12_11-44-02.jpg" alt="" />
+            <h3 class="card-name">Каныкей Арстанбаева</h3>
+            <div class="card-profession">
+              Backend Developer/ <br />
+              DataScience
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="./images/photo_2023-07-12_11-44-22.jpg" alt="" />
+            <h3 class="card-name">Мирбек Баратбаев</h3>
+            <div class="card-profession">Frontend Developer</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="carousel container" id="cardUl"></ul>
+    </div>
+
+    <section class="partners container">
+      <h3>Наши партнёры</h3>
+      <div class="partners-list">
+        <img src="./images/Google-icon.svg" alt="1" />
+        <img src="./images/amazon-icon.svg" alt="2" />
+        <img src="./images/airbnb-icon.svg" alt="3" />
+        <img src="./images/facebook-icon.svg" alt="4" />
+        <img src="./images/slack-icon.svg" alt="5" />
+        <img src="./images/shopify-icon.svg" alt="6" />
+        <img src="./images/airbnb-icon.svg" alt="7" />
+        <img src="./images/Analytics-icon.svg" alt="8" />
+        <img src="./images/zoom-icon.svg" alt="9" />
+      </div>
+    </section>
+
+    <div class="container profession">
+      <div class="profession-title">
+        <h2>
+          Узнай с чего начать карьеру в IT,<br />
+          о направлениях и профессиях
+        </h2>
+        <button>Все IT профессии тут</button>
+      </div>
+      <img src="./images/laptop-icon.png" alt="" />
+    </div>
+
+    <section class="container get">
+      <div class="get-text">
+        <h3>Что ты получишь у нас:</h3>
+        <button class="textBtn">Добавить текст</button>
+        <div class="newTextBlock">
+          <textarea
+            cols="30"
+            rows="10"
+            class="newText"
+            placeholder="Введите текст"
+          ></textarea>
+          <button class="textBtn" id="newTextSave">Save</button>
+        </div>
+        <div class="get-text-info">
+          <h3>01</h3>
+          <p>
+            Изучение программирования с нуля в 2 раза быстрее чем на других
+            курсах. Мы - самые выгодные среди всех курсов в Бишкеке!
+          </p>
+          <h3>02</h3>
+          <p>
+            Онлайн-стажировка после изучения. Стажировка была утверждена
+            реальными IT компаниями. Работа над проектами как в реальных IT
+            компаниях.
+          </p>
+          <h3>03</h3>
+          <p>
+            Легкий доступ к компаниям.Твое портфолио увидят десятки компаний. Мы
+            тебя свяжем с компаниями и поможем обустроиться в работе.
+          </p>
+        </div>
+        <div class="get-text-info" id="get-text-info-new"></div>
+      </div>
+    </section>
+
+    <div class="main-modal">
+      <div class="inner-modal">
+        <button id="btnClose">X</button>
+        <form class="form1">
+          <p>Ссылка на фото</p>
+          <input type="text" id="inpImage" placeholder="фото" />
+          <p>ФИО выпускника</p>
+          <input type="text" id="inpName" placeholder="имя" />
+          <p>Занимаемая должность</p>
+          <input type="text" id="inpProfession" placeholder="должность" />
+          <button id="btnSave">Сохранить</button>
+          <button id="btnSaveChanges">Сохранить </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-modal">
+      <div class="inner-text-modal">
+        <h3>Добавьте то, что мы получим у вас</h3>
+        <button id="textModalClose">X</button>
+        <textarea placeholder="Введите текст"></textarea>
+        <button id="textModalSave">Сохранить изменения</button>
+      </div>
+    </div>
+
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
